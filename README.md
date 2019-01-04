@@ -9,6 +9,13 @@ Employees are the backbone of the organization. Organization's performance is he
 3. Impact in productivity
 4. Impact profit
 
+The following solution is designed to help address the employee attrition problem. When the reader has completed this code pattern, they will understand:
+
+1. Process involved in solving a data science problem.
+2. How to create and use watson studio instance.
+3. How to mitigate bias by transforming the original dataset.
+4. How to build and deploy the model in Watson Studio using various tools.
+
 # Dataset License Details
 | Asset | License | Source Link |
 | ------------- | --------  | -------- | 

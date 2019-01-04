@@ -58,9 +58,7 @@ The following solution is designed to help address the employee attrition proble
 
 3. Create new project under the data science service and provide necessary details.
 ![new](docs/new-project.png)
-
 4. Click on `Add to Project` from the `Assets` option and select notebook from the provided list.
-
 ![notebook](docs/notebook.png)
 
 5. Upload the notebook by using using the below URL by choosing `FROM URL` option. 

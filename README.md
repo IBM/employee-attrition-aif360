@@ -1,6 +1,6 @@
 # Data Science Process Pipeline in action to solve Employee Attrition Problem
 
-This code pattern is a high level overview of what to expect in a data science pipeline and tools that can be used along the way. It starts from framing business question to deploying the model. The pipeline is demonstrated through the employee attrition problem.
+This code pattern is a high level overview of what to expect in a data science pipeline and tools that can be used along the way. It starts from framing the business question to deploying the model. The pipeline is demonstrated through the employee attrition problem.
 
 Employees are the backbone of the organization. Organization's performance is heavily based on the quality of the employees. Challenges that an organization has to face due employee attrition are:
 

@@ -1,18 +1,18 @@
 # Data Science Process Pipeline in action to solve Employee Attrition Problem
 
-This code pattern is a high level overview of what to expect in a data science pipeline and tools that can be used along the way. It starts from framing the business question to deploying the model. The pipeline is demonstrated through the employee attrition problem.
+This code pattern is a high-level overview of what to expect in a data science pipeline and tools that can be used along the way. It starts from framing the business question to deploying the model. The pipeline is demonstrated through the employee attrition problem.
 
 Employees are the backbone of the organization. Organization's performance is heavily based on the quality of the employees. Challenges that an organization has to face due employee attrition are:
 
 1. Expensive in terms of both money and time to train new employees.
 2. Loss of experienced employees
-3. Impact in productivity
-4. Impact profit
+3. Impact on productivity
+4. Impact on profit
 
 The following solution is designed to help address the employee attrition problem. When the reader has completed this code pattern, they will understand:
 
-1. Process involved in solving a data science problem.
-2. How to create and use watson studio instance.
+1. The process involved in solving a data science problem.
+2. How to create and use Watson Studio instance.
 3. How to mitigate bias by transforming the original dataset.
 4. How to build and deploy the model in Watson Studio using various tools.
 
@@ -26,8 +26,8 @@ The following solution is designed to help address the employee attrition proble
 
 1. Open Watson Studio and create a project using Jupyter notebook and Python 3.5.
 2. Upload the notebook under the project created.
-3. Download the data in Watson studio and start exploring using various exploring and visulaization tools.
-4. Notebook also imports the AI Fairness 360 toolkit in model development phase of data science process.
+3. Download the data in Watson Studio and start exploring using various exploring and visualization tools.
+4. Notebook also imports the AI Fairness 360 toolkit in the model development phase of data science process.
 5. Run the entire notebook to deploy the model.
 
 # Included Components

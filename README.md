@@ -43,7 +43,7 @@ The following solution is designed to help address the employee attrition proble
 1. [Artificial Intelligence](https://medium.com/ibm-watson): Artificial intelligence can be applied to disparate solution spaces to deliver disruptive technologies.
 2. [Data Science](https://medium.com/ibm-watson): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 3. [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
-4. [pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
+4. [Pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
 
 
 # Steps to run and deploy the model in Watson Studio

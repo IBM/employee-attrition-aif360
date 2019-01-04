@@ -49,20 +49,32 @@ The following solution is designed to help address the employee attrition proble
 # Steps to run and deploy the model in Watson Studio
 
 1. Sign up for IBM's Watson Studio.
+
 2. Click the Create a Project tile and choose the Data Science service tile from the next screen. This is the best choice for a Jupyter notebook based project.
+
 ![project](docs/project.png)
+
 ![datascience](docs/datascience.png)
+
 3. Create new project under the data science service and provide necessary details.
 ![new](docs/new-project.png)
-4. Click on `Add to Project` from the `Assets` option and select notebook from the provided list. 
+
+4. Click on `Add to Project` from the `Assets` option and select notebook from the provided list.
+
 ![notebook](docs/notebook.png)
+
 5. Upload the notebook by using using the below URL by choosing `FROM URL` option. 
+
    URL: `https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/notebook/notebook_emp_attrition.ipynb`
+   
 ![load](docs/load.png)
+
 6. Use the menu pull-down Cell > Run All to run the notebook, or run the cells one at a time top-down using the play button.
    As the cells run, watch the output for results or errors. A running cell will have a label like In [*]. A completed cell      will have a run sequence number instead of the asterisk.
+   
 7. Update WML credentials under deployment heading to facilitate model deployment. Note: Name given for the custom library in 
    the custom library metadata step must be unique everytime ('client.runtimes.LibraryMetaNames.NAME'- this place).
+   
 8. Check deployment model using own input by changing values in scoring payload cell.
 
 # Learn more

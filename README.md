@@ -30,8 +30,8 @@ The following solution is designed to help address the employee attrition proble
 2. Upload the jupyter notebook and start running it.
 3. Notebook downloads the dataset and imports fairness toolkit (AIF360) and Pygal data visualization library.
 4. Pandas is used for reading the data and perform initial data exploration.
-5. Matplotlib, Seaborn, Plotly, Bokeh and Pygal (from step-2) are used for visualizing the data.
-6. Scikit-Learn and AIF360 (from step-2) are used for model development.
+5. Matplotlib, Seaborn, Plotly, Bokeh and Pygal (from step-3) are used for visualizing the data.
+6. Scikit-Learn and AIF360 (from step-3) are used for model development.
 7. Use the IBM Watson Machine Learning feature to deploy and access the model to generate wine classification.
 
 # Included Components

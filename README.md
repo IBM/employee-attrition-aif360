@@ -22,13 +22,17 @@ The following solution is designed to help address the employee attrition proble
 | [Employee Attrition Data - Database License](data/emp_attrition.csv) | [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 | [Employee Attrition Data - Content License](data/emp_attrition.csv) | [ Database Content license (DbCL)](https://opendatacommons.org/licenses/dbcl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 
+![flow](docs/source/images/flow.png)
+
 # Flow
 
-1. Open Watson Studio and create a project using Jupyter notebook and Python 3.5.
-2. Upload the notebook under the project created.
-3. Download the data in Watson Studio and start exploring using various exploring and visualization tools.
-4. Notebook also imports the AI Fairness 360 toolkit in the model development phase of data science process.
-5. Run the entire notebook to deploy the model.
+1. Create and login to the IBM Watson Studio.
+2. Upload the jupyter notebook and start running it.
+3. Notebook downloads the dataset and imports fairness toolkit (AIF360) and Pygal data visualization library.
+4. Pandas is used for reading the data and perform initial data exploration.
+5. Matplotlib, Seaborn, Plotly, Bokeh and Pygal (from step-2) are used for visualizing the data.
+6. Scikit-Learn and AIF360 (from step-2) are used for model development.
+7. Use the IBM Watson Machine Learning feature to deploy and access the model to generate wine classification.
 
 # Included Components
 
@@ -52,23 +56,23 @@ The following solution is designed to help address the employee attrition proble
 
 2. Click the Create a Project tile and choose the Data Science service tile from the next screen. This is the best choice for a Jupyter notebook based project.
 
-![project](docs/project.png)
+![project](docs/source/images/project.png)
 
 ![datascience](docs/datascience.png)
 
 3. Create new project under the data science service and provide necessary details.
 
-![new](docs/new_project.png)
+![new](docs/source/images/new_project.png)
 
 4. Click on `Add to Project` from the `Assets` option and select notebook from the provided list. 
 
-![notebook](docs/notebook.png)
+![notebook](docs/source/images/notebook.png)
 
 5. Upload the notebook by using using the below URL by choosing `FROM URL` option. 
 
    URL: `https://raw.githubusercontent.com/IBM/employee-attrition-aif360/master/notebook/notebook_emp_attrition.ipynb`
    
-![load](docs/load.png)
+![load](docs/source/images/load.png)
 
 6. Use the menu pull-down Cell > Run All to run the notebook, or run the cells one at a time top-down using the play button.
    As the cells run, watch the output for results or errors. A running cell will have a label like In [*]. 

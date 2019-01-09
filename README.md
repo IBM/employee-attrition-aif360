@@ -22,9 +22,9 @@ The following solution is designed to help address the employee attrition proble
 | [Employee Attrition Data - Database License](data/emp_attrition.csv) | [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 | [Employee Attrition Data - Content License](data/emp_attrition.csv) | [ Database Content license (DbCL)](https://opendatacommons.org/licenses/dbcl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 
-![flow](docs/source/images/flow.png)
-
 # Flow
+
+![flow](docs/source/images/flow.png)
 
 1. Create and login to the IBM Watson Studio.
 2. Upload the jupyter notebook and start running it.
@@ -38,9 +38,6 @@ The following solution is designed to help address the employee attrition proble
 
 1. [IBM Watson Studio](https://www.ibm.com/bs-en/marketplace/data-science-experience): Analyze data using RStudio, Jupyter, and Python in a configured, collaborative environment that includes IBM value-adds, such as managed Spark.
 2. [Jupyter Notebook](http://jupyter.org/): An open source web application that allows you to create and share documents that contain live code, equations, visualizations, and explanatory text.
-3. [AIF360 Fairness toolkit](http://aif360.mybluemix.net/): This extensible open source toolkit can help you examine, report, and mitigate discrimination and bias in machine learning models throughout the AI application lifecycle.
-4. [Scikit-Learn](https://scikit-learn.org/stable/#): Free software machine learning library for the Python programming language.
-5. Data Visualization tools: Bokeh, Matplotlib, Seaborn, Pygal and Plotly
 
 # Featured technologies
 
@@ -48,7 +45,9 @@ The following solution is designed to help address the employee attrition proble
 2. [Data Science](https://medium.com/ibm-watson): Systems and scientific methods to analyze structured and unstructured data in order to extract knowledge and insights.
 3. [Python](https://www.python.org/): Python is a programming language that lets you work more quickly and integrate your systems more effectively.
 4. [Pandas](http://pandas.pydata.org/): A Python library providing high-performance, easy-to-use data structures.
-
+5. [AIF360 Fairness toolkit](http://aif360.mybluemix.net/): This extensible open source toolkit can help you examine, report, and mitigate discrimination and bias in machine learning models throughout the AI application lifecycle.
+6. [Scikit-Learn](https://scikit-learn.org/stable/#): Free software machine learning library for the Python programming language.
+7. Data Visualization tools: Bokeh, Matplotlib, Seaborn, Pygal and Plotly.
 
 # Steps to run and deploy the model in Watson Studio
 

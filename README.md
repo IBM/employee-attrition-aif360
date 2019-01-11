@@ -67,7 +67,7 @@ The data is made available under the following license agreements:
 > * View the completed [notebook](examples/employee-attrition.ipynb) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 
-## 1. Create a Watson Machie Learning service instance
+## 1. Create a Watson Machine Learning service instance
 
 From your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) create a [Watson Machine Learning](https://console.bluemix.net/catalog/services/machine-learning) instance.
 

@@ -173,9 +173,9 @@ options to specify exactly what you want shared from your notebook:
 
   ![library-error](doc/source/images/library-error.png)
   
-  This will occur if when you run the notebook multiple times. The custom library `NAME` found in the structure below must be unique for each run. Change the value and run the cell again.
+  This will occur if you run the notebook multiple times. The custom library `NAME` found in the structure below must be unique for each run. Change the value and run the cell again.
 
-  ```bash
+  ```python
   library_metadata = {
         client.runtimes.LibraryMetaNames.NAME: "PipelineLabelEncoder-Custom",
         client.runtimes.LibraryMetaNames.DESCRIPTION: "label_encoder_sklearn",

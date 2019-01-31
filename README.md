@@ -36,7 +36,7 @@ The data is made available under the following license agreements:
 1. Pandas is used for reading the data and perform initial data exploration.
 1. Matplotlib, Seaborn, Plotly, Bokeh and Pygal (from step-3) are used for visualizing the data.
 1. Scikit-Learn and AIF360 (from step-3) are used for model development.
-1. Use the IBM Watson Machine Learning feature to deploy and access the model to generate wine classification.
+1. Use the IBM Watson Machine Learning feature to deploy and access the model to generate employee attrition classification.
 
 ## Included Components
 

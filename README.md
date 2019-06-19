@@ -22,7 +22,7 @@ The data is made available under the following license agreements:
 
 ### Dataset License Details
 | Asset | License | Source Link |
-| ------------- | --------  | -------- | 
+| ------------- | --------  | -------- |
 | [Employee Attrition Data - Database License](data/emp_attrition.csv) | [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 | [Employee Attrition Data - Content License](data/emp_attrition.csv) | [ Database Content license (DbCL)](https://opendatacommons.org/licenses/dbcl/1.0/) | [Kaggle](https://www.kaggle.com/pavansubhasht/ibm-hr-analytics-attrition-dataset/home) |
 
@@ -54,66 +54,55 @@ The data is made available under the following license agreements:
 * [Scikit-Learn](https://scikit-learn.org/stable/#): Free software machine learning library for the Python programming language.
 * Data Visualization tools: Bokeh, Matplotlib, Seaborn, Pygal and Plotly.
 
-# Steps
+## Steps
 
-1. [Create a Watson Machine Learning service instance](#1-create-a-watson-machine-learning-service-instance)
-1. [Sign up for the Watson Studio](#2-sign-up-for-the-watson-studio)
-1. [Create a new Watson Studio project](#3-create-a-new-watson-studio-project)
-1. [Create the notebook](#4-create-the-notebook)
-1. [Run the notebook](#5-run-the-notebook)
-1. [Save and Share](#6-save-and-share)
+1. [Create a new Watson Studio project](#1-create-a-new-watson-studio-project)
+1. [Create the notebook](#2-create-the-notebook)
+1. [Run the notebook](#3-run-the-notebook)
+1. [Save and Share](#4-save-and-share)
 
 > Note: if you would prefer to skip the following steps and just follow along by viewing the completed Notebook, simply:
 > * View the completed [notebook](examples/employee-attrition.ipynb) and its outputs, as is.
 > * While viewing the notebook, you can optionally download it to store for future use.
 
-## 1. Create a Watson Machine Learning service instance
+### 1. Create a new Watson Studio project
 
-From your [IBM Cloud Dashboard](https://console.bluemix.net/dashboard/apps) create a [Watson Machine Learning](https://console.bluemix.net/catalog/services/machine-learning) instance.
+* Log into IBM's [Watson Studio](https://dataplatform.cloud.ibm.com). Once in, you'll land on the dashboard.
 
-Once created, take note of the credentials listed under the `Service credentials` tab. These credentials will need to be added to the notebook created in the following steps.
+* Create a new project by clicking `+ New project` and choosing `Data Science`:
 
-> Note: The `Machine Learning` service is required by our notebook to facilitate model deployment.
+  ![studio project](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/new-project-data-science.png)
 
-## 2. Sign up for the Watson Studio
+* Enter a name for the project name and click `Create`.
 
-Log in or sign up for IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/).
+> **NOTE**: By creating a project in Watson Studio a free tier `Object Storage` service and `Watson Machine Learning` service will be created in your IBM Cloud account. Select the `Free` storage type to avoid fees.
 
-## 3. Create a new Watson Studio project
-
-* Select the `New Project` option from the Watson Studio landing page and choose the `Data Science` option.
-
-![studio-projects](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_choices.png)
-
-* To create a project in Watson Studio, give the project a name and either create a new `Cloud Object Storage` service or select an existing one from your IBM Cloud account.
-
-![studio-new-project](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/new_project.png)
+![studio-new-project](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/new-project-data-science-name.png)
 
 * Upon a successful project creation, you are taken to a dashboard view of your project. Take note of the `Assets` and `Settings` tabs, we'll be using them to associate our project with any external assets (datasets and notebooks) and any IBM cloud services.
 
-![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/project_dashboard.png)
+![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/overview-empty.png)
 
-## 4. Create the Notebook
+## 2. Create the Notebook
 
-* From the project dashboard view, click the `+ Add to project` button, then select `Notebook` as the asset type.
+The notebook we'll be using can be viewed in [`notebooks/employee-attrition.ipynb`](notebooks/employee-attrition.ipynb), and a completed version can be found in [`examples/employee-attrition.ipynb`](examples/employee-attrition.ipynb).
 
-* Give your notebook a name and select your desired runtime, in this case we'll be using python Runtime.
+* From the new project `Overview` panel, click `+ Add to project` on the top right and choose the `Notebook` asset type.
 
-* Now select the `From URL` tab to specify the URL to the notebook in this repository.
+![studio-project-dashboard](https://raw.githubusercontent.com/IBM/pattern-utils/master/watson-studio/add-assets-notebook.png)
 
-![studio-notebook-url](https://raw.githubusercontent.com/IBM/pattern-images/master/watson-studio/notebook_with_url_spark.png)
+* Fill in the following information:
 
-* Enter this URL:
+  * Select the `From URL` tab. [1]
+  * Enter a `Name` for the notebook and optionally a description. [2]
+  * Under `Notebook URL` provide the following url: [https://github.com/IBM/employee-attrition-aif360/blob/master/notebooks/employee-attrition.ipynb](https://github.com/IBM/employee-attrition-aif360/blob/master/notebooks/employee-attrition.ipynb) [3]
+  * For `Runtime` select the `Python 3.5` option. [4]
 
-```bash
-https://github.com/IBM/employee-attrition-aif360/blob/master/notebooks/employee-attrition.ipynb
-```
+  ![add notebook](https://github.com/IBM/pattern-utils/raw/master/watson-studio/notebook-create-url-py35.png)
 
-* Click the `Create` button.
+* **TIP:** Once successfully imported, the notebook should appear in the `Notebooks` section of the `Assets` tab.
 
-> Note: If queried for a Python version, select version `3.5`.
-
-## 5. Run the notebook
+## 3. Run the notebook
 
 When running the notebook, you will come to the cell that requires you to enter your `Watson Machine Learning` instance credentials. These will be required to complete the notebook. Refer to `step #1` above for more details.
 
@@ -141,7 +130,7 @@ There are several ways to execute the code cells in your notebook:
     panel. Here you can schedule your notebook to be executed once at some future
     time, or repeatedly at your specified interval.
 
-## 6. Save and Share
+## 4. Save and Share
 
 ### How to save your work:
 
@@ -167,16 +156,16 @@ options to specify exactly what you want shared from your notebook:
 * `All content, including code`: displays the notebook as is.
 * A variety of `download as` options are also available in the menu.
 
-# Sample output
+## Sample output
 
 View a copy of the notebook including output [here](examples/employee-attrition.ipynb).
 
-# Troubleshooting
+## Troubleshooting
 
 * Notebook error:
 
   ![library-error](doc/source/images/library-error.png)
-  
+
   This will occur if you run the notebook multiple times. The custom library `NAME` found in the structure below must be unique for each run. Change the value and run the cell again.
 
   ```python
@@ -189,7 +178,7 @@ View a copy of the notebook including output [here](examples/employee-attrition.
   }
   ```
 
-# Learn more
+## Learn more
 
 * **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **Data Analytics Code Patterns**: Enjoyed this Code Pattern? Check out our other [Data Analytics Code Patterns](https://developer.ibm.com/technologies/data-science/)
@@ -197,7 +186,7 @@ View a copy of the notebook including output [here](examples/employee-attrition.
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 * **Watson Studio**: Master the art of data science with IBM's [Watson Studio](https://dataplatform.cloud.ibm.com/)
 
-# License
+## License
 
 This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
